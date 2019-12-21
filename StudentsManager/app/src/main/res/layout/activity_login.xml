@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.LoginActivity">
+
+    <android.support.design.widget.AppBarLayout
+            android:id="@+id/ab_login"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:elevation="0dp"
+            android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/tb_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:elevation="0dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <TextView
+                    android:id="@+id/tv_login_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/ecardTextColor1"
+                    android:textSize="17sp"
+                    tools:text="校园卡"/>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+            app:layout_constraintTop_toBottomOf="@id/ab_login"
+            android:id="@+id/iv_login"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="60dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@drawable/sm_main"/>
+
+    <EditText
+            app:layout_constraintBottom_toTopOf="@id/bt_login_person"
+            android:layout_marginBottom="20dp"
+            android:layout_width="0dp"
+            android:hint="请输入学号"
+            app:layout_constraintLeft_toLeftOf="@id/bt_login"
+            app:layout_constraintRight_toRightOf="@id/bt_login"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:id="@+id/et_login"/>
+
+    <Button
+            android:id="@+id/bt_login_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@id/bt_login"
+            app:layout_constraintRight_toRightOf="@id/bt_login"
+            android:text="点击进入个人管理系统"
+            android:textSize="12dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="1dp"
+            android:textColor="#324562"
+            app:layout_constraintBottom_toTopOf="@id/bt_login"/>
+
+    <Button
+            android:id="@+id/bt_login"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="130dp"
+            android:text="点击进入公共管理系统"
+            android:elevation="1dp"
+            android:textSize="12dp"
+            android:textColor="#324562"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</android.support.constraint.ConstraintLayout>

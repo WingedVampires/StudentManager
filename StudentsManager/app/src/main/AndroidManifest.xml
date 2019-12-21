@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.studentsmanager">
+
+    <application
+            android:name="org.litepal.LitePalApplication"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            android:usesCleartextTraffic="true">
+        <activity android:name=".view.Main2Activity">
+        </activity>
+        <activity android:name=".view.SearchActivity">
+        </activity>
+        <activity android:name=".view.ScheduleActivity">
+        </activity>
+        <activity android:name=".view.CourseActivity">
+        </activity>
+        <activity android:name=".view.StudentActivity">
+        </activity>
+        <activity android:name=".view.MainActivity">
+        </activity>
+        <activity android:name=".view.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <receiver
+                android:name=".commons.AutoReceiver"
+                android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver >
+    </application>
+
+</manifest>

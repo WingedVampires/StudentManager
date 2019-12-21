@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#9AB6D6"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <android.support.constraint.ConstraintLayout android:layout_width="match_parent"
+                                                     android:layout_height="wrap_content">
+            <ImageView android:layout_width="16dp" android:layout_height="16dp"
+                       android:background="@drawable/sm_delete"
+                       app:layout_constraintTop_toTopOf="parent"
+                       app:layout_constraintRight_toRightOf="parent"
+                       android:layout_marginEnd="5dp"
+                       android:id="@+id/iv_delete"
+                       android:layout_marginTop="5dp"/>
+
+
+            <ImageView
+                    android:id="@+id/iv_student"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/sm_name"/>
+
+            <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="@id/iv_student"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_student"
+                    app:layout_constraintLeft_toRightOf="@id/iv_student"
+                    android:layout_marginStart="5dp"
+                    android:textSize="15sp"
+                    tools:text="jiewoigjojerow"/>
+
+            <ImageView
+                    android:id="@+id/iv_id"
+                    app:layout_constraintTop_toTopOf="@id/iv_student"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_student"
+                    app:layout_constraintLeft_toRightOf="@id/tv_name"
+                    android:layout_marginStart="40dp"
+                    android:layout_width="18dp"
+                    android:background="@drawable/sm_id"
+                    android:layout_height="18dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="@id/iv_student"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_student"
+                    app:layout_constraintLeft_toRightOf="@id/iv_id"
+                    android:id="@+id/tv_id"
+                    tools:text="3017218194"
+                    android:textSize="15sp"
+                    android:layout_marginStart="5dp"/>
+
+            <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    app:layout_constraintTop_toTopOf="@id/iv_student"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_student"
+                    app:layout_constraintLeft_toRightOf="@id/tv_id"
+                    android:layout_marginStart="40dp"
+                    android:background="@drawable/sm_teacher"
+                    android:id="@+id/iv_class"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="@id/iv_student"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_student"
+                    app:layout_constraintLeft_toRightOf="@id/iv_class"
+                    android:id="@+id/tv_class"
+                    tools:text="1"
+                    android:textSize="15sp"
+                    android:layout_marginStart="5dp"/>
+
+            <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    app:layout_constraintTop_toBottomOf="@id/iv_student"
+                    app:layout_constraintLeft_toLeftOf="@id/iv_student"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/sm_year"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/iv_year"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      app:layout_constraintTop_toTopOf="@id/iv_year"
+                      android:id="@+id/tv_year"
+                      app:layout_constraintLeft_toLeftOf="@id/tv_name"
+                      android:textSize="15sp"
+                      tools:text="2017"
+                      app:layout_constraintBottom_toBottomOf="@id/iv_year"/>
+
+            <ImageView android:layout_width="18dp" android:layout_height="18dp"
+                       app:layout_constraintTop_toTopOf="@id/iv_year"
+                       app:layout_constraintBottom_toBottomOf="@id/iv_year"
+                       app:layout_constraintLeft_toLeftOf="@id/iv_id"
+                       android:background="@drawable/sm_age"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      app:layout_constraintTop_toTopOf="@id/iv_year"
+                      app:layout_constraintBottom_toBottomOf="@id/iv_year"
+                      app:layout_constraintLeft_toLeftOf="@id/tv_id"
+                      tools:text="2"
+                      android:textSize="15sp"
+                      android:id="@+id/tv_age"/>
+
+
+            <ImageView android:layout_width="18dp" android:layout_height="18dp"
+                       android:id="@+id/iv_sex"
+                       app:layout_constraintTop_toTopOf="@id/iv_year"
+                       app:layout_constraintBottom_toBottomOf="@id/iv_year"
+                       app:layout_constraintLeft_toLeftOf="@id/iv_class"
+                       android:background="@drawable/sm_sex"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      app:layout_constraintLeft_toLeftOf="@id/tv_class"
+                      app:layout_constraintTop_toTopOf="@id/iv_year"
+                      app:layout_constraintBottom_toBottomOf="@id/iv_year"
+                      tools:text="男"
+                      android:id="@+id/tv_sex"
+                      android:textSize="12dp"/>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

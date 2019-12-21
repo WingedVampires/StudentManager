@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.SearchActivity">
+    <android.support.design.widget.AppBarLayout
+            android:id="@+id/ab_main"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:elevation="0dp"
+            android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tb_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:elevation="0dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <TextView
+                    android:id="@+id/tv_main_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/ecardTextColor1"
+                    android:textSize="17sp"
+                    android:text="搜索"/>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <EditText
+            android:id="@+id/et_st"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ab_main"
+            android:layout_marginTop="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginStart="50dp"
+            android:hint="学生id或姓名"
+            android:layout_marginEnd="50dp"/>
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@id/et_st"
+            app:layout_constraintRight_toRightOf="@id/et_st"
+            app:layout_constraintTop_toBottomOf="@id/et_st"
+            android:hint="课程id或名称"
+            android:layout_marginTop="30dp"
+            android:id="@+id/et_cr"/>
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@id/et_st"
+            app:layout_constraintRight_toRightOf="@id/et_st"
+            app:layout_constraintTop_toBottomOf="@id/et_cr"
+            android:layout_marginTop="30dp"
+            android:hint="班级id"
+            android:id="@+id/et_cl"/>
+
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/et_cl"
+            android:layout_marginTop="70dp"
+            android:id="@+id/bn_check"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="查询"/>
+</android.support.constraint.ConstraintLayout>
